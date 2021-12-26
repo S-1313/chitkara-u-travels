@@ -1,0 +1,142 @@
+/*Header*/
+header{
+    background-color: red;
+    height: 125px;
+}
+ 
+span{
+    float: right;
+    position: absolute;
+    width: 20%;
+    vertical-align: top;
+}
+h1{
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    vertical-align: top;
+    width: 61%;
+}
+
+h2{
+    background-color: coral;
+}
+
+/*Navigation Bar*/
+nav{
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+nav div{
+    text-align: center;
+}
+nav div a{
+    color: wheat;
+    font-size: large;
+    margin: 0px 0px;
+}
+/*About*/
+p{
+    font-family: -webkit-pictograph;
+    font-size: 20px
+}
+
+
+
+.pictures{
+    width: 200px;
+    height: 240px;
+    margin: 10px;
+    font-size: x-large;
+    padding: 100px 0px ;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: fantasy;
+    
+}
+
+main div:hover{
+    box-shadow: 0px 0px 6px 10px thistle;
+    color: red;
+    transition: color 0.5s; font-size: 0.5s;
+    font-size: xx-large;
+    width: 204px;
+    height: 244px;
+}
+
+.Places{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#chandigarh{
+    background-image: url(chandigarh_lake.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#Patiala{
+    background-image: url(patialaf.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#mohali{
+    background-image: url(mohali.jpg);
+    background-size: cover;
+    
+}
+#panchkula{
+    background-image: url(panchkula.jpg);
+    background-size: cover;
+    
+}
+#ambala{
+    background-image: url(ambala.jpg);
+    background-size: cover;
+    
+}
+#khanna{
+    background-image: url(khanna.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#zirakpur{
+    background-image: url(zirakpur.jpg);
+    background-size: cover;
+    
+}
+#rajpura{
+    background-image: url(beauty.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#derabassi{
+    background-image: url(beauty1.jpg);
+    background-size: cover;
+}
+#sirhind{
+    background-image: url(rose_garden.jpg);
+    background-size: cover;
+}
+#dz{
+    background-image: url(beauty2.jpg);
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*Contact*/
+#contact{
+    width: 100%;
+    height: 100pt;
+    background-color: blue;
+    font-size: 28px;
+}
