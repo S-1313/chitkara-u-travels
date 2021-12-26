@@ -1,0 +1,19 @@
+
+#div{
+  background-color: coral;
+  text-align: center;
+}
+#di{
+  text-align: center;
+  background-color: crimson;
+  display: inline-block;
+}
+#d{
+  height: 100px;
+  width: 200px;
+  display: inline-block;
+  margin: -10px;
+  text-align: center;
+  background-color: darkgreen;
+  vertical-align: top;
+}
