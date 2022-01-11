@@ -1,0 +1,72 @@
+/*Header*/
+header{
+    background-color: red;
+    height: 125px;
+}
+ 
+span{
+    float: right;
+    position: absolute;
+    width: 20%;
+    vertical-align: top;
+}
+h1{
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    vertical-align: top;
+    width: 61%;
+}
+
+
+/*Navigation Bar*/
+nav{
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+nav div{
+    text-align: center;
+}
+nav div a{
+    color: wheat;
+    font-size: large;
+    margin: 0px 0px;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(39 118 250);
+    margin: 1px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+main{
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    float: left;
+}
+map{
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+.stop {
+width: 20px;
+height: 20px;
+background: rgb(21, 90, 218);
+border-radius: 50%;
+border: 4px solid rgb(14, 29, 247);
+}
+
+.c1 {
+    width: 7px;
+    height: 38px;
+    background: rgb(21, 90, 218);
+    margin-left: 10px;
+}
