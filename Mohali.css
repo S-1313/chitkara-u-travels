@@ -1,0 +1,89 @@
+/*Header*/
+header{
+    background-color: red;
+    height: 125px;
+}
+ 
+span{
+    float: right;
+    position: absolute;
+    width: 20%;
+    vertical-align: top;
+}
+h1{
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    vertical-align: top;
+    width: 61%;
+}
+
+h2{
+    background-color: coral;
+}
+
+/*Navigation Bar*/
+nav{
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: -41px;
+}
+nav div{
+    text-align: center;
+}
+nav div a{
+    color: wheat;
+    font-size: large;
+    margin: 0px 0px;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(39 118 250);
+}
+
+body{
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*main*/
+
+main{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 10pt;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.route{
+    width: 200px;
+    height: 250px;
+    margin: 10pt;
+    padding:  100px  20px;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url(backgroundnature.jpg);
+    background-position: 200px 250px;
+    font-size: large;
+    font-family: fantasy;
+    
+}
+
+
+main div:hover{
+    box-shadow: 0px 0px 6px 10px rgb(99, 96, 96);
+    transition: color 0.5s; font-size: 0.5s;
+    font-size: x-large;
+    width: 204px;
+    height: 244px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
