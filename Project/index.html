@@ -7,31 +7,51 @@
     <title>Chitkara U Travels</title>
     
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <header>
         
-        <a href="index.html"><img src="logo.jpg" alt="logo" height="125px" width="20%" ></a> 
+        <a href="index.html"><img src="logo.jpg" alt="logo" height="100%" width="20%" ></a> 
      
      
-     <h1>Chitkara U Travels</h1>
-     <span>
-         <a href="https://www.chitkara.edu.in/" target="_blank"><img src="cu logo.jpg" alt="" height="125px" ></a>
+     <a href="index.html"><h1>Chitkara U Travels</h1></a>
+     <span id="image">
+        <a href="https://www.chitkara.edu.in/" target="_blank"><img src="cu logo.jpg" alt="" height="125px" width="100%" ></a>
      </span>
      
     </header>
-    
-    <nav>
-        <div>
-            <a href="index.html">Home </a> &nbsp;&nbsp;
-            <a href="#about">About </a> &nbsp;&nbsp;
-            <a href="#notifications">Notfications</a> &nbsp;&nbsp;
-            <a href="#">Covid Precautions</a> &nbsp;&nbsp;
-            <a href="#contact">Contact </a> &nbsp;&nbsp;
-        </div>
+
+    <!--Horizontal navigation bar-->
+    <nav id="horizontal">
+        <a href="index.html">Home </a> &nbsp;&nbsp;
+        <a href="#about">About </a> &nbsp;&nbsp;
+        <a href="#notifications">Notfications</a> &nbsp;&nbsp;
+        <a href="#">Covid Precautions</a> &nbsp;&nbsp;
+        <a href="#contact">Contact </a> &nbsp;&nbsp;                   
     </nav>
-    <img src="cu.jpg" alt="Chitkara University image" width="100%">
+
     
+    <!--Vertical navigation bar-->
+    <nav id="vertical">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 30px;">&times;</a><br>
+        <a href="index.html">Home </a>
+        <a href="#about">About </a>
+        <a href="#chandigarh">Routes</a>
+        <a href="#notifications">Notfications</a>
+        <a href="#">Covid Precautions</a>
+        <a href="#contact">Contact </a><br> 
+    </nav>
+
+
+    <div style="background-color: black;">
+        <span id="span" style="font-size: 20px; cursor: pointer; background-color: black; color: wheat;" onclick="openNav()">&#9776;</span>
+    </div>
+    
+
+    <img src="cu.jpg" alt="Chitkara University image" width="100%">
+
+    <!--About-->
     <h2 id="about">About</h2>
     <p>
         Chitkara University is a private university located in Rajpura, Punjab, India. It offers undergraduate programs, post-graduate program and doctoral programs in fields of engineering, management, pharmacy, health sciences, nursing, hospitality, art & design and education.
@@ -43,17 +63,11 @@
 
     <h2>Cities with University Transport Facility</h2>
     <main class="Places">
-        <div id="chandigarh" class="pictures">
-            <a href="">Chandigarh</a>
-        </div>
+        <a href="" target="_blank"><div id="chandigarh" class="pictures">Chandigarh</div></a>
         
-        <div id="Patiala"class="pictures">
-            <a href="Patiala.html" target="_blank">Patiala</a>
-        </div>
+        <a href="Patiala.html" target="_blank"><div id="Patiala"class="pictures">Patiala</div></a>
     
-        <div id="mohali"class="pictures">
-            Mohali
-        </div>
+        <a href="Mohali.html" target="_blank"><div id="mohali"class="pictures">Mohali</div></a>
     
         <div id="sirhind"class="pictures">
             SIRHIND
@@ -67,9 +81,7 @@
             AMBALA / SHAHBAD
         </div>
     
-        <div id="rajpura"class="pictures">
-            RAJPURA
-        </div>
+        <a href="Rajpura.html" target="_blank"><div id="rajpura"class="pictures">Rajpura</div></a>
     
         <div id="khanna"class="pictures">
             KHANNA
@@ -87,14 +99,51 @@
             DERABASSI / ZRK
         </div>
     </main>
+
+    <!--Notifications-->
     <h2 id="notifications">Notifications</h2>
     <ul>
         <li><a href="https://punjab.chitkara.edu.in//Storage/Images/Transport_Undertaking_2020_21.pdf" target="_blank">Transport Undertaking 2020-21</a></li>
     </ul>
+
         <br><a href="#">Go to Top</a>
+
+    <!--Contacts-->
     <div id="contact">
         <b>Contact</b>
     </div>
+
+    <!--Script-->
+    <script>
+        /*opens vertical navigation bar*/
+        function openNav(){
+            document.getElementById("vertical").style.width="250px";
+        }
+        /*closes vertical navigation bar*/
+        function closeNav(){
+            document.getElementById("vertical").style.width="0px";
+        }
+  
+        /*changes horizontal navigation bar to vertical navigation bar at 480px & vice versa*/
+        function navBar(x){
+            if(x.matches){
+                document.getElementById("span").innerHTML="&#9776;"
+                document.getElementById("horizontal").innerHTML=""
+            }else{
+                document.getElementById("span").innerHTML=" ";
+                document.getElementById("horizontal").innerHTML='<a href="index.html">Home </a> &nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#about">About </a>&nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#notifications">Notfications</a> &nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#">Covid Precautions</a>&nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#contact">Contact </a> ';
+
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 480px)");
+        navBar(x)
+        x.addListener(navBar)
+    </script>
 
 </body>
 </html>
