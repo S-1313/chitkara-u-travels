@@ -17,6 +17,7 @@ h1{
     font-size: 50px;
     vertical-align: top;
     width: 61%;
+    
 }
 
 h2{
@@ -24,12 +25,16 @@ h2{
 }
 
 @media screen and (max-width:710px) {
+    header{
+        background-image: none;
+    }
     header  img{
         width: 0px;
         height: 0px;
     }
     h1{
         width: 100%;
+        margin-top: 16px;
     }
     span{
         width: 0px;
