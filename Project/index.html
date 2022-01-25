@@ -100,37 +100,7 @@
         </div>
     </main>
 
-    <!--Script-->
-    <script>
-        /*opens vertical navigation bar*/
-        function openNav(){
-            document.getElementById("vertical").style.width="250px";
-        }
-        /*closes vertical navigation bar*/
-        function closeNav(){
-            document.getElementById("vertical").style.width="0px";
-        }
-  
-        /*changes horizontal navigation bar to vertical navigation bar at 480px & vice versa*/
-        function navBar(x){
-            if(x.matches){
-                document.getElementById("span").innerHTML="&#9776;"
-                document.getElementById("horizontal").innerHTML=""
-            }else{
-                document.getElementById("span").innerHTML=" ";
-                document.getElementById("horizontal").innerHTML='<a href="index.html">Home </a> &nbsp;&nbsp;';
-                document.getElementById("horizontal").innerHTML+='<a href="#about">About </a>&nbsp;&nbsp;';
-                document.getElementById("horizontal").innerHTML+='<a href="#notifications">Notfications</a> &nbsp;&nbsp;';
-                document.getElementById("horizontal").innerHTML+='<a href="#">Covid Precautions</a>&nbsp;&nbsp;';
-                document.getElementById("horizontal").innerHTML+='<a href="#contact">Contact </a> ';
-
-            }
-        }
-
-        var x = window.matchMedia("(max-width: 480px)");
-        navBar(x)
-        x.addListener(navBar)
-    </script>
+    
 
 
     <!--Notifications-->
@@ -199,6 +169,37 @@
     <div id="copyright">
         <h6>Copyright ©2022 ChitkaraU Travels | All rights reserved |</h6>
     </div>
-</footer>    
+</footer>  
+    <!--Script-->
+    <script>
+        /*opens vertical navigation bar*/
+        function openNav(){
+            document.getElementById("vertical").style.width="250px";
+        }
+        /*closes vertical navigation bar*/
+        function closeNav(){
+            document.getElementById("vertical").style.width="0px";
+        }
+  
+        /*changes horizontal navigation bar to vertical navigation bar at 480px & vice versa*/
+        function navBar(x){
+            if(x.matches){
+                document.getElementById("span").innerHTML="&#9776;"
+                document.getElementById("horizontal").innerHTML=""
+            }else{
+                document.getElementById("span").innerHTML=" ";
+                document.getElementById("horizontal").innerHTML='<a href="index.html">Home </a> &nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#about">About </a>&nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#notifications">Notfications</a> &nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#">Covid Precautions</a>&nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#contact">Contact </a> ';
+
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 480px)");
+        navBar(x)
+        x.addListener(navBar)
+    </script>
 </body>
 </html>
