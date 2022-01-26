@@ -5,49 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patiala</title>
-    <link rel="stylesheet" href="practise.css">
+    <link rel="stylesheet" href="Patiala.css">
 </head>
 <body>
     <header>
         
-        <img src="logo.jpg" alt="logo" height="125px" width="20%" >
-    
-    
-    <h1>Chitkara U Travels</h1>
-    <span>
-        <img src="cu logo.jpg" alt="" height="125px" >
-    </span>
-    
-</header>
+        <a href="index.html"><img src="logo.jpg" alt="logo" height="100%" width="20%" ></a> 
+     
+     
+     <a href="index.html"><h1>Chitkara U Travels</h1></a>
+     <span id="image">
+        <a href="https://www.chitkara.edu.in/" target="_blank"><img src="cu logo.jpg" alt="" height="125px" width="100%" ></a>
+     </span>
+     
+    </header>
 
-<nav>
-    <div>
+    <!--Horizontal navigation bar-->
+    <nav id="horizontal">
         <a href="index.html">Home </a> &nbsp;&nbsp;
         <a href="#about">About </a> &nbsp;&nbsp;
-        <a href="#">PickUp Points</a> &nbsp;&nbsp;
         <a href="#notifications">Notfications</a> &nbsp;&nbsp;
-        <a href="#">Covid Precautions</a> &nbsp;&nbsp;
-        <a href="#contact">Contact </a> &nbsp;&nbsp;
+        <a href="Covid_Precautions.html">Covid Precautions</a> &nbsp;&nbsp;
+        <a href="#contact">Contact </a> &nbsp;&nbsp;  
+        <a href="Feedback Form.html">Feedback Form</a> &nbsp;&nbsp;                 
+    </nav>
+
+    
+    <!--Vertical navigation bar-->
+    <nav id="vertical">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 30px;">&times;</a><br>
+        <a href="index.html">Home </a>
+        <a href="#about">About </a>
+        <a href="#chandigarh">Routes</a>
+        <a href="#notifications">Notfications</a>
+        <a href="Covid_Precautions.html">Covid Precautions</a>
+        <a href="#contact">Contact </a>
+        <a href="Feedback Form.html">Feedback Form</a> 
+    </nav>
+
+
+    <div style="background-color: black;">
+        <span id="span" style="font-size: 20px; cursor: pointer; background-color: black; color: wheat;" onclick="openNav()">&#9776;</span>
     </div>
-</nav>
+    
+
+    
     <h2>Patiala</h2>
     <main >
         <div class="route">
-            <a href="#" >Route 42</a>
+            <a href="Route 42.html" >Route 42</a>
         </div>
         <div class="route">
-            <a href="">Route 43</a>
+            <a href="Route 43.html">Route 43</a>
         </div>
         <div class="route">
-           <a href="#">Route 44</a>
+           <a href="Route 44.html">Route 44</a>
         </div>
         <div class="route">
-            <a href="#">Route 45</a>
+            <a href="Route 45.html">Route 45</a>
         </div>
         <div class="route">
-            <a href="#">Route 46</a>
+            <a href="Route 46.htm">Route 46</a>
         </div>
     </main>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110180.85645362285!2d76.33901362678104!3d30.346636484700067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028935a3313df%3A0xd5bc56ad3b90bc7f!2sPatiala%2C%20Punjab!5e0!3m2!1sen!2sin!4v1640252045536!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <!--Script-->
+    <script>
+        /*opens vertical navigation bar*/
+        function openNav(){
+            document.getElementById("vertical").style.width="250px";
+        }
+        /*closes vertical navigation bar*/
+        function closeNav(){
+            document.getElementById("vertical").style.width="0px";
+        }
+  
+        /*changes horizontal navigation bar to vertical navigation bar at 480px & vice versa*/
+        function navBar(x){
+            if(x.matches){
+                document.getElementById("span").innerHTML="&#9776;"
+                document.getElementById("horizontal").innerHTML=""
+            }else{
+                document.getElementById("span").innerHTML=" ";
+                document.getElementById("horizontal").innerHTML='<a href="index.html">Home </a> &nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#about">About </a>&nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#notifications">Notfications</a> &nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="Covid_Precautions.html">Covid Precautions</a>&nbsp;&nbsp;';
+                document.getElementById("horizontal").innerHTML+='<a href="#contact">Contact </a>&nbsp;&nbsp; ';
+                document.getElementById("horizontal").innerHTML+='<a href="Feedback Form.html">Feedback Form </a> ';
+
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 590px)");
+        navBar(x)
+        x.addListener(navBar)
+    </script>
 </body>
 </html>
