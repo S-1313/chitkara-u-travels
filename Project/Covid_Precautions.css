@@ -1,0 +1,167 @@
+body{
+    background-color: #6e9f21;
+}
+h1{
+    color: white;
+    text-shadow: thistle;
+    display: inline-block;
+    font-size: 60px;
+    margin: 0;
+}
+h2{
+    display: inline-block;
+}
+
+#emojy{
+    font-size: 900%;
+    margin-bottom: -32px;
+    margin-top: -140px;
+    margin-left: 880px;
+    display: inline-block;
+    transform: rotate(15deg);
+}
+#header{
+    display: inline-block;
+    margin-left: 310px;
+    margin-top: -205px;
+}
+
+#p{
+    margin: 55pt;
+    text-align: center;
+}
+#emojy0{
+    font-size: 900%;
+    margin-bottom: -32px;
+    margin-top: 37px;
+    margin-left: 90px;
+    display: inline-block;
+    transform: rotate(-15deg);
+}
+
+#div{
+    width: 80%;
+    background-color: wheat;
+    border: 5px solid green;
+    border-radius: 25px;
+    margin: 10%;
+}
+#heading{       
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    background-color: green;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -1px;
+    padding: 10px;
+}
+p{
+    display: inline-block;
+}
+
+.image{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5% 0% 5% 5%;
+}
+.content{
+    width: 60%;
+    float: right;
+    margin-top: 6%;
+    font-size: 25px;
+}
+#image1{
+    background-image: url(hand_wash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#image2{
+    background-image: url(mask.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#image3{
+    background-image: url(social_distancing.jpg);
+    background-position: center;
+}
+hr.dashed {
+    border-top: 3px dashed #bc7272;
+  }
+
+@media screen and (max-width:1080px) {
+    .content{
+        font-size: 19px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    #header{
+        margin-left: 250px;
+    }
+    #emojy0{
+        margin-left: 35px;
+    }
+    #emojy{
+        margin-left: 690px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    #emojy0{
+        margin-left: 30px;
+    }
+    #emojy{
+        margin-left: 650px;
+    }
+    #heading{
+        font-size: 30px;
+    }
+    
+}
+@media screen and (max-width: 830px) {
+    h1{
+        font-size: 40px;
+    }
+    #emojy0{
+        font-size: 830%;
+    }
+    #emojy{
+       font-size: 830%;
+    }
+}
+@media screen and (max-width:750px) {
+    .image{
+        width: 150px;
+        height: 150px;
+    }
+    .content{
+        font-size: 14px;
+    }
+    #image1{
+        background-position: -51px 0px;
+    }
+    #heading{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #emojy0{
+        margin-left: 30px;
+        font-size: 750%;
+    }
+    #emojy{
+        margin-left: 550px;
+        font-size: 750%;
+    }
+}
